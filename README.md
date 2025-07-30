@@ -11,6 +11,7 @@ A Laravel-based web application implementing custom role-based authentication **
 - CRUD for Employee and Task (with role-based access)
 - My Profile view for all
 - Pagination & status colors
+- For database connection use MySQL
 
 ## 📁 Project Structure
 
@@ -24,8 +25,8 @@ A Laravel-based web application implementing custom role-based authentication **
 ## 🛠 Installation
 
 ```bash
-git clone https://github.com/yourusername/role-auth-app.git
-cd role-auth-app
+git clone https://github.com/xSAMRATx/role-based-authentication.git
+cd role-based-authentication
 composer install
 cp .env.example .env
 php artisan key:generate
