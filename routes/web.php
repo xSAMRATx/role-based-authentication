@@ -46,15 +46,15 @@ Route::middleware(['auth', 'role:employee'])
 
 
 // Guest Routes
-// Route::middleware('guest')->group(function () {
-// register
-Route::get('register', [RegisterController::class, 'showRegisterForm'])->name('manual.register.form');
-Route::post('register', [RegisterController::class, 'register'])->name('register');
+Route::middleware('guest')->group(function () {
+    // register
+    Route::get('register', [RegisterController::class, 'showRegisterForm'])->name('manual.register.form');
+    Route::post('register', [RegisterController::class, 'register'])->name('register');
 
-// login
-Route::get('login', [LoginController::class, 'showLoginForm'])->name('manual.login.form');
-Route::post('login', [LoginController::class, 'login'])->name('login');
-// });
+    // login
+    Route::get('login', [LoginController::class, 'showLoginForm'])->name('manual.login.form');
+    Route::post('login', [LoginController::class, 'login'])->name('login');
+});
 
 // logout
 Route::middleware('auth')->group(function () {
