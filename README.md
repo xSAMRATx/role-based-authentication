@@ -17,8 +17,9 @@ A Laravel-based web application implementing custom role-based authentication **
 - `app/Models/Role.php` – Role model
 - `app/Http/Middleware/RoleMiddleware.php` – Role-based middleware
 - `database/seeders/RoleSeeder.php` – Seeder to create default roles
+- `database/seeders/PermissionRoleSeeder.php` – Seeder to create role-wise permission
 - `routes/web.php` – All web routes with middleware protection
-- `resources/views/` – Blade files for login, register, dashboard, profile, etc.
+- `resources/views/` – Blade files for login, register, dashboard, profile, employee, task etc.
 
 ## 🛠 Installation
 
