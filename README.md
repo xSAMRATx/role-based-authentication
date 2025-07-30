@@ -9,10 +9,8 @@ A Laravel-based web application implementing custom role-based authentication **
 - Blade directives for roles
 - Role seeder with roles like `admin`, `hr manager`, `employee`
 - CRUD for Employee and Task (with role-based access)
-- My Profile view for employees
-- Conditional UI rendering (e.g., hiding role column for HR)
+- My Profile view for all
 - Pagination & status colors
-- Welcome page with dynamic message
 
 ## 📁 Project Structure
 
